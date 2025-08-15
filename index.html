@@ -73,15 +73,67 @@
                 <button>share</button>
             </div>
         </div>
-        <div class="menu-bar">
+    </header>
+
+    <div class="menu-bar">
+        <div>
+            <p><span><i class="bi bi-grid-1x2-fill"></i></span> Dashboard</p>
+        </div>
+        <button onclick="toggleMobileMenu()">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+    <div class="menu-overlay" id="menuOverlay" onclick="closeMobileMenu()"></div>
+
+    <div class="menu-list" id="menuList">
+        <div>
             <div>
-                <p><span><i class="bi bi-grid-1x2-fill"></i></span> Dashboard</p>
+                <label for="search-bar-mobile"><i class="bi bi-search"></i></label>
+                <input type="text" id="search-bar-mobile" />
             </div>
             <div>
-                <i class="bi bi-list"></i>
+                <div><i class="bi bi-bell"></i></div>
+                <div>
+                    <div class="pfp-img">
+                        <img src="assets/images/profile picture/pfp.jpeg" alt="">
+                    </div>
+                    <p class="username">
+                        Morgan Oakley
+                    </p>
+                </div>
             </div>
         </div>
-    </header>
+        <div>
+            <div>
+                <div class="pfp-img">
+                    <img src="assets/images/profile picture/pfp.jpeg" alt="">
+                </div>
+                <div>
+                    <p>Hi there,</p>
+                    <p>Morgan Oakley (@morgan)</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li><a><span><i class="bi bi-house-door-fill"></i></span>home</a></li>
+                        <li><a><span><i class="bi bi-person-lines-fill"></i></span>profile</a></li>
+                        <li><a><span><i class="bi bi-chat-right-fill"></i></span>messages</a></li>
+                        <li><a><span><i class="bi bi-clock-fill"></i></span>history</a></li>
+                        <li><a><span><i class="bi bi-file-earmark-text-fill"></i></span>tasks</a></li>
+                        <li><a><span><i class="bi bi-people-fill"></i></span>communities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a><span><i class="bi bi-gear-fill"></i></span>settings</a></li>
+                        <li><a><span><i class="bi bi-question-square-fill"></i></span>support</a></li>
+                        <li><a><span><i class="bi bi-shield-fill-check"></i></span>privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <div class="projects">
             <h2>your projects</h2>
@@ -216,6 +268,9 @@
             </div>
         </div>
     </main>
+
+
+    <script src="assets/scripts/open-side-menu.js"></script>
 </body>
 
 </html>
